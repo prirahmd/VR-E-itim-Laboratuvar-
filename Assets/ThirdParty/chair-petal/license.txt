@@ -1,0 +1,11 @@
+Model Information:
+* title:	Chair-petal
+* source:	https://sketchfab.com/3d-models/chair-petal-93765f620ed34cb8867e1aa675dc9246
+* author:	lionarts3d (https://sketchfab.com/lionarts3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Chair-petal" (https://sketchfab.com/3d-models/chair-petal-93765f620ed34cb8867e1aa675dc9246) by lionarts3d (https://sketchfab.com/lionarts3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
