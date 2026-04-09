@@ -1,0 +1,437 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 6937,
+      "max": [
+        0.5243120193481445,
+        0.4428919851779938,
+        1.5508209466934204
+      ],
+      "min": [
+        -0.642632007598877,
+        -0.44288599491119385,
+        -0.0013909999979659915
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 83244,
+      "componentType": 5126,
+      "count": 6937,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 6937,
+      "max": [
+        1.000331997871399,
+        1.0
+      ],
+      "min": [
+        -0.3009890019893646,
+        -0.009987999685108662
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 21234,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 166488,
+      "componentType": 5126,
+      "count": 4590,
+      "max": [
+        0.6315950155258179,
+        0.1641940027475357,
+        1.7516390085220337
+      ],
+      "min": [
+        -0.6407529711723328,
+        -0.16418999433517456,
+        0.7683560252189636
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 221568,
+      "componentType": 5126,
+      "count": 4590,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 55496,
+      "componentType": 5126,
+      "count": 4590,
+      "max": [
+        1.0011390447616577,
+        1.0
+      ],
+      "min": [
+        -0.0011390000581741333,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 84936,
+      "componentType": 5125,
+      "count": 15675,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 276648,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.6173160076141357,
+        0.14731499552726746,
+        1.731727957725525
+      ],
+      "min": [
+        -0.6360129714012146,
+        -0.06880100071430206,
+        1.5211520195007324
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 281544,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.9999814033508301,
+        1.0,
+        0.9999663829803467
+      ],
+      "min": [
+        -0.9789454340934753,
+        -1.0,
+        -0.9782133102416992
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 92216,
+      "componentType": 5126,
+      "count": 408,
+      "max": [
+        0.9241039752960205,
+        0.4566960036754608
+      ],
+      "min": [
+        0.04330400004982948,
+        0.04330400004982948
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 147636,
+      "componentType": 5125,
+      "count": 1848,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 286440,
+      "componentType": 5126,
+      "count": 2829,
+      "max": [
+        0.5163509845733643,
+        0.43988001346588135,
+        1.580456018447876
+      ],
+      "min": [
+        -0.6120319962501526,
+        -0.43987399339675903,
+        0.044658999890089035
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 320388,
+      "componentType": 5126,
+      "count": 2829,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 95480,
+      "componentType": 5126,
+      "count": 2829,
+      "max": [
+        1.0,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.009999999776482582
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 155028,
+      "componentType": 5125,
+      "count": 7800,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "assetfactory (https://sketchfab.com/assetfactory)",
+      "license": "SKETCHFAB Standard (https://sketchfab.com/licenses)",
+      "source": "https://sketchfab.com/3d-models/telescope-with-the-tripod-95dc54a4f3fc47cca3f372ed86017ba7",
+      "title": "Telescope with the tripod"
+    },
+    "generator": "Sketchfab-16.33.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 186228,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 118112,
+      "byteOffset": 186228,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 354336,
+      "byteOffset": 304340,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 658676,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "BlackMetal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.061168677160403105,
+          0.061168677160403105,
+          0.061168677160403105,
+          1.0
+        ],
+        "metallicFactor": 0.8182753126494128,
+        "roughnessFactor": 0.1587979955287536
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "BlackPlastic",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.009615739678686761,
+          0.009615739678686761,
+          0.009615739678686761,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Lens",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8163713551730142,
+          0.775209617965722,
+          1.0,
+          1.0
+        ],
+        "roughnessFactor": 0.0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Metal",
+      "pbrMetallicRoughness": {
+        "roughnessFactor": 0.24672830447817481
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_3",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": "Telescope.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_4"
+    },
+    {
+      "mesh": 3,
+      "name": "Object_5"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

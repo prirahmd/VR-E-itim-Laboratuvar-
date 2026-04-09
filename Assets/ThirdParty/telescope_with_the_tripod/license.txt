@@ -1,0 +1,8 @@
+Model Information:
+* title:	Telescope with the tripod
+* source:	https://sketchfab.com/3d-models/telescope-with-the-tripod-95dc54a4f3fc47cca3f372ed86017ba7
+* author:	assetfactory (https://sketchfab.com/assetfactory)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
