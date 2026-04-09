@@ -5300,7 +5300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476074174}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.88, y: 1.45, z: 4.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5821,6 +5821,11 @@ MonoBehaviour:
 --- !u!20 &494399888 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 9014170783809206330, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+  m_PrefabInstance: {fileID: 1522782886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &494399891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9014170783809206335, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
   m_PrefabInstance: {fileID: 1522782886}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &502110177 stripped
@@ -10951,7 +10956,7 @@ Transform:
   m_GameObject: {fileID: 898607307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.759, y: 1.528, z: -4.327}
+  m_LocalPosition: {x: 2.86, y: 1.034, z: -4.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16405,6 +16410,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1379542562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379542565}
+  m_Layer: 0
+  m_Name: QuizTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379542565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379542562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0071389535, y: -0.0031489097, z: 0.0015959607, w: 0.9999683}
+  m_LocalPosition: {x: 3.229, y: 1.08, z: -4.7102}
+  m_LocalScale: {x: 0.4459701, y: 0.99558, z: 0.41909176}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0.819, y: -0.36, z: 0.18}
 --- !u!1001 &1395045707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16949,6 +16985,7 @@ GameObject:
   - component: {fileID: 1484409107}
   - component: {fileID: 1484409106}
   - component: {fileID: 1484409108}
+  - component: {fileID: 1484409109}
   m_Layer: 0
   m_Name: LessonManager
   m_TagString: Untagged
@@ -17014,6 +17051,22 @@ MonoBehaviour:
   - {fileID: 868725445}
   - {fileID: 2018137988}
   - {fileID: 151974866}
+--- !u!114 &1484409109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484409105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7321bdb5d042614bb3d0b12745d84d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 494399891}
+  targetPoint: {fileID: 898607308}
+  quizSceneName: Kuis
+  loadDistance: 1.5
 --- !u!1 &1484954040
 GameObject:
   m_ObjectHideFlags: 0
@@ -17630,9 +17683,33 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2160322979750087497, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 2160322979750087497, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.54
+      objectReference: {fileID: 0}
     - target: {fileID: 2819856895474916288, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127728407712097239, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_Height
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127728407712097239, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127728407712097239, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127728407712097239, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_Center.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 3127728408163665757, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_Enabled
@@ -17649,6 +17726,10 @@ PrefabInstance:
     - target: {fileID: 3415145736139425353, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4090221840526957868, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17708,11 +17789,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.45
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.85
+      value: -2.86
       objectReference: {fileID: 0}
     - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23269,9 +23350,9 @@ SceneRoots:
   - {fileID: 388550052}
   - {fileID: 1763965430}
   - {fileID: 74139391}
+  - {fileID: 476074178}
   - {fileID: 1154973333}
   - {fileID: 568000455}
-  - {fileID: 476074178}
   - {fileID: 816190590}
   - {fileID: 1962726487}
   - {fileID: 1016606990}
@@ -23291,6 +23372,7 @@ SceneRoots:
   - {fileID: 566842762}
   - {fileID: 1521180313}
   - {fileID: 898607308}
+  - {fileID: 1379542565}
   - {fileID: 1585538389}
   - {fileID: 1167818256}
   - {fileID: 725692931}
