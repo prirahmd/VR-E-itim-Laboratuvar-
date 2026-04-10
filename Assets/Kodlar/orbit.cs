@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class Orbit : MonoBehaviour
+public class ShowPath : MonoBehaviour
 {
-    public Transform center; // Sun
-    public float speed = 20f;
+    public GameObject yellowPath;
 
-    void Update()
+    public void ShowYellowPath()
     {
-        transform.RotateAround(center.position, Vector3.up, speed * Time.deltaTime);
+        yellowPath.SetActive(true);
     }
 }
