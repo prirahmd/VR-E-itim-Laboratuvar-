@@ -1,0 +1,11 @@
+Model Information:
+* title:	Korean Curtain Blinder
+* source:	https://sketchfab.com/3d-models/korean-curtain-blinder-47e1cd6dfc0b4cab90b66069ea6222fd
+* author:	tqezzz (https://sketchfab.com/tqezzz)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Korean Curtain Blinder" (https://sketchfab.com/3d-models/korean-curtain-blinder-47e1cd6dfc0b4cab90b66069ea6222fd) by tqezzz (https://sketchfab.com/tqezzz) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
