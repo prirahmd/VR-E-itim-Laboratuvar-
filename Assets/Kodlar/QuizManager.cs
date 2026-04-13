@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
@@ -7,7 +7,7 @@ public class QuizManager : MonoBehaviour
 {
     [Header("UI Components")]
     public TMP_Text questionText;
-    public Button[] choiceButtons; // A, B, C, D
+    public Button[] choiceButtons;
     public TMP_Text resultText;
     public GameObject restartButton;
 
@@ -45,23 +45,14 @@ public class QuizManager : MonoBehaviour
         new string[] { "A) Hicbir sey olmazdi", "B) Hayat olmazdi", "C) Daha sicak olurdu", "D) Daha hizli donerdi" }
     };
 
-    // 0=A, 1=B, 2=C, 3=D
     private int[] correctAnswers = {
-        2, // Gunes
-        1, // 8
-        1, // Yildiz
-        1, // 4.6 milyar
-        2, // 3
-        2, // %70
-        2, // Ay
-        1, // Gunes isigini yansitarak
-        1, // 27 gun
-        1  // Hayat olmazdi
+        2, 1, 1, 1, 2, 2, 2, 1, 1, 1
     };
 
     private int currentQuestionIndex = 0;
     private int score = 0;
     private bool isAnswering = false;
+    private bool passed = false;
 
     void Start()
     {
@@ -73,6 +64,7 @@ public class QuizManager : MonoBehaviour
         currentQuestionIndex = 0;
         score = 0;
         isAnswering = false;
+        passed = false;
 
         if (resultText != null)
             resultText.text = "";
@@ -81,7 +73,10 @@ public class QuizManager : MonoBehaviour
             restartButton.SetActive(false);
 
         foreach (Button btn in choiceButtons)
+        {
             btn.gameObject.SetActive(true);
+            btn.interactable = false; // ✅ مو تفاعلي في البداية
+        }
 
         DisplayQuestion();
     }
@@ -102,7 +97,20 @@ public class QuizManager : MonoBehaviour
             if (btnImage != null)
                 btnImage.color = normalColor;
 
-            choiceButtons[i].interactable = true;
+            choiceButtons[i].interactable = false; // ✅ مو تفاعلي فوراً
+        }
+
+        StartCoroutine(EnableButtonsAfterDelay()); // ✅ تأخير قبل التفاعل
+    }
+
+    // ✅ فنكشن جديدة - تفعيل الأزرار بعد تأخير
+    IEnumerator EnableButtonsAfterDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        foreach (Button btn in choiceButtons)
+        {
+            btn.interactable = true;
         }
     }
 
@@ -160,26 +168,29 @@ public class QuizManager : MonoBehaviour
     void ShowFinalResult()
     {
         if (questionText != null)
-            questionText.text = "QUIZ COMPLETED";
+            questionText.text = "SINAV TAMAMLANDI";
 
         foreach (Button btn in choiceButtons)
             btn.gameObject.SetActive(false);
 
         string rating;
-        if (score == questions.Length)
-            rating = "Excellent";
-        else if (score >= questions.Length * 0.7f)
-            rating = "Very Good";
-        else if (score >= questions.Length * 0.5f)
-            rating = "Good";
+
+        if (score < 5)
+        {
+            rating = "Başarısız ❌";
+            passed = false;
+        }
         else
-            rating = "Try Again";
+        {
+            rating = "Başarılı ✅";
+            passed = true;
+        }
 
         if (resultText != null)
-            resultText.text = "Score: " + score + " / " + questions.Length + "\n" + rating;
+            resultText.text = "Puan: " + score + " / " + questions.Length + "\n" + rating;
 
         if (restartButton != null)
-            restartButton.SetActive(true);
+            restartButton.SetActive(score < 5);
     }
 
     public void RestartQuiz()
