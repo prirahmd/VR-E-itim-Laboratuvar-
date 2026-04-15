@@ -6,6 +6,8 @@ public class OfflineSpaceChatbot : MonoBehaviour
     public TMP_InputField keyboardInputField;
     public TextMeshProUGUI answerText;
 
+    public RobotTalkController robotTalkController; // «—»ÿ «·—Ê»Ê  Â‰« „‰ «·‹ Inspector
+
     public void SendMessage()
     {
         string q = keyboardInputField.text.Trim().ToLower();
@@ -14,6 +16,12 @@ public class OfflineSpaceChatbot : MonoBehaviour
         {
             answerText.text = "Please type a question about space.";
             return;
+        }
+
+        // ÌŒ·Ì «·—Ê»Ê  Ì»œ√ «·ﬂ·«„ ⁄‰œ ≈—”«· «·”ƒ«·
+        if (robotTalkController != null)
+        {
+            robotTalkController.StartTalking();
         }
 
         // =========================

@@ -18,6 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/laboratuvar.unity
     guid: 04ffbac7b6705d84098f13315a6c2dc7
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6d2c3bbb494e6e643894173758f9a1ac, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 544b58bd512a4ce459b56581c96b5b72, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 9b1fff2383180514191846a992af82f4, type: 2}
