@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.AI;
 
 public class MoveToTarget : MonoBehaviour
@@ -13,7 +13,7 @@ public class MoveToTarget : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
-        // äæŞİ ÇáÃäíãíÔä ÈÇáÈÏÇíÉ
+        // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (animator != null)
         {
             animator.speed = 0;
@@ -27,7 +27,7 @@ public class MoveToTarget : MonoBehaviour
             agent.SetDestination(target.position);
             isMoving = true;
 
-            // äÔÛá ÇáÃäíãíÔä
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (animator != null)
             {
                 animator.speed = 1;
@@ -41,7 +41,7 @@ public class MoveToTarget : MonoBehaviour
         {
             isMoving = false;
 
-            // äæŞİ ÇáÃäíãíÔä áãÇ íæÕá
+            // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             if (animator != null)
             {
                 animator.speed = 0;
