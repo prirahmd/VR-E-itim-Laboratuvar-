@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - gunes_layer
+  - ay_layer
+  - merkur_layer
+  - venus_layer
+  - dunya_layer
+  - jupiter_layer
+  - saturn_layer
   - 
   - 
   - 
