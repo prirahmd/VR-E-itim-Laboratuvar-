@@ -10,6 +10,10 @@ public class QuizManager : MonoBehaviour
     public Button[] choiceButtons;
     public TMP_Text resultText;
     public GameObject restartButton;
+    public GameObject goToLabButton;
+
+    [Header("Path Objects")]
+    public GameObject yellowPath;
 
     [Header("Colors")]
     public Color normalColor = Color.white;
@@ -72,10 +76,16 @@ public class QuizManager : MonoBehaviour
         if (restartButton != null)
             restartButton.SetActive(false);
 
+        if (goToLabButton != null)
+            goToLabButton.SetActive(false);
+
+        if (yellowPath != null)
+            yellowPath.SetActive(false);
+
         foreach (Button btn in choiceButtons)
         {
             btn.gameObject.SetActive(true);
-            btn.interactable = false; // ✅ مو تفاعلي في البداية
+            btn.interactable = false;
         }
 
         DisplayQuestion();
@@ -97,13 +107,12 @@ public class QuizManager : MonoBehaviour
             if (btnImage != null)
                 btnImage.color = normalColor;
 
-            choiceButtons[i].interactable = false; // ✅ مو تفاعلي فوراً
+            choiceButtons[i].interactable = false;
         }
 
-        StartCoroutine(EnableButtonsAfterDelay()); // ✅ تأخير قبل التفاعل
+        StartCoroutine(EnableButtonsAfterDelay());
     }
 
-    // ✅ فنكشن جديدة - تفعيل الأزرار بعد تأخير
     IEnumerator EnableButtonsAfterDelay()
     {
         yield return new WaitForSeconds(0.5f);
@@ -190,7 +199,19 @@ public class QuizManager : MonoBehaviour
             resultText.text = "Puan: " + score + " / " + questions.Length + "\n" + rating;
 
         if (restartButton != null)
-            restartButton.SetActive(score < 5);
+            restartButton.SetActive(!passed);
+
+        if (goToLabButton != null)
+            goToLabButton.SetActive(passed);
+    }
+
+    public void ShowPathToLab()
+    {
+        if (!passed)
+            return;
+
+        if (yellowPath != null)
+            yellowPath.SetActive(true);
     }
 
     public void RestartQuiz()
