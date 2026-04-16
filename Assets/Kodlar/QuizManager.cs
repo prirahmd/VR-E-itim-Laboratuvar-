@@ -23,6 +23,10 @@ public class QuizManager : MonoBehaviour
     [Header("Quiz Settings")]
     public float nextQuestionDelay = 2f;
 
+    [Header("Student Info")]
+    public string studentName;
+    public string studentNumber;
+
     private string[] questions = {
         "Gunes sistemimizin merkezi hangisidir?",
         "Gunes sisteminde kac gezegen vardir?",
@@ -57,18 +61,23 @@ public class QuizManager : MonoBehaviour
     private int score = 0;
     private bool isAnswering = false;
     private bool passed = false;
+    private bool quizStarted = false;
 
     void Start()
     {
-        InitializeQuiz();
+        PrepareQuizUI();
     }
 
-    void InitializeQuiz()
+    void PrepareQuizUI()
     {
         currentQuestionIndex = 0;
         score = 0;
         isAnswering = false;
         passed = false;
+        quizStarted = false;
+
+        if (questionText != null)
+            questionText.text = "";
 
         if (resultText != null)
             resultText.text = "";
@@ -86,6 +95,43 @@ public class QuizManager : MonoBehaviour
         {
             btn.gameObject.SetActive(true);
             btn.interactable = false;
+
+            Image btnImage = btn.GetComponent<Image>();
+            if (btnImage != null)
+                btnImage.color = normalColor;
+        }
+    }
+
+    public void StartQuiz(string name, string number)
+    {
+        studentName = name;
+        studentNumber = number;
+
+        currentQuestionIndex = 0;
+        score = 0;
+        isAnswering = false;
+        passed = false;
+        quizStarted = true;
+
+        if (resultText != null)
+            resultText.text = "";
+
+        if (restartButton != null)
+            restartButton.SetActive(false);
+
+        if (goToLabButton != null)
+            goToLabButton.SetActive(false);
+
+        if (yellowPath != null)
+            yellowPath.SetActive(false);
+
+        foreach (Button btn in choiceButtons)
+        {
+            btn.gameObject.SetActive(true);
+
+            Image btnImage = btn.GetComponent<Image>();
+            if (btnImage != null)
+                btnImage.color = normalColor;
         }
 
         DisplayQuestion();
@@ -93,6 +139,8 @@ public class QuizManager : MonoBehaviour
 
     void DisplayQuestion()
     {
+        if (!quizStarted) return;
+
         if (questionText != null)
             questionText.text = questions[currentQuestionIndex];
 
@@ -125,7 +173,7 @@ public class QuizManager : MonoBehaviour
 
     public void CheckAnswer(int clickedButtonIndex)
     {
-        if (isAnswering)
+        if (!quizStarted || isAnswering)
             return;
 
         isAnswering = true;
@@ -186,17 +234,23 @@ public class QuizManager : MonoBehaviour
 
         if (score < 5)
         {
-            rating = "Başarısız ❌";
+            rating = "Başarısız";
             passed = false;
         }
         else
         {
-            rating = "Başarılı ✅";
+            rating = "Başarılı";
             passed = true;
         }
 
         if (resultText != null)
-            resultText.text = "Puan: " + score + " / " + questions.Length + "\n" + rating;
+        {
+            resultText.text =
+                "Name: " + studentName +
+                "\nStudent No: " + studentNumber +
+                "\nPuan: " + score + " / " + questions.Length +
+                "\n" + rating;
+        }
 
         if (restartButton != null)
             restartButton.SetActive(!passed);
@@ -214,8 +268,41 @@ public class QuizManager : MonoBehaviour
             yellowPath.SetActive(true);
     }
 
+    public bool HasPassed()
+    {
+        return passed;
+    }
+
     public void RestartQuiz()
     {
-        InitializeQuiz();
+        currentQuestionIndex = 0;
+        score = 0;
+        isAnswering = false;
+        passed = false;
+        quizStarted = true;
+
+        if (resultText != null)
+            resultText.text = "";
+
+        if (restartButton != null)
+            restartButton.SetActive(false);
+
+        if (goToLabButton != null)
+            goToLabButton.SetActive(false);
+
+        if (yellowPath != null)
+            yellowPath.SetActive(false);
+
+        foreach (Button btn in choiceButtons)
+        {
+            btn.gameObject.SetActive(true);
+            btn.interactable = false;
+
+            Image btnImage = btn.GetComponent<Image>();
+            if (btnImage != null)
+                btnImage.color = normalColor;
+        }
+
+        DisplayQuestion();
     }
 }
